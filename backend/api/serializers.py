@@ -10,7 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ['id', 'title', 'description', 'location', 'date', 'time', 'category', 'organizer', 'ticket_price', 'available_tickets']
+        fields = '__all__'
 
 
 class TicketSerializer(serializers.ModelSerializer):
